@@ -37,12 +37,12 @@ if (opcionb==str(i+1)):
 else :
  
  
-      #balan='f5000a.labalm.mercadona.es'
+      #balan='f5000a.labalm'
       balan=listabalan[int(opcionb)]
       #userbalan=input('Cual es tu usuario ')
       userbalan='admin'
       #pwdbalan=input('Cual es tu pwd ')
-      pwdbalan='Alma$4'
+      pwdbalan='*******'
       #print('ofidona\\'+userbalan)
  
       print ('Te vas a conectar al nodo ' + balan + ' con usuario ' + userbalan)
@@ -128,45 +128,4 @@ else :
             mgmt.tm.cm.exec_cmd('run', utilCmdArgs='config-sync to-group ' + group_name)
             #mgmt.tm.cm.exec_cmd('run', utilCmdArgs='device-group show')
  
- 
-#show cm device-group
- 
-#-------------------------------------------------------------------
-#CM::Device-Group
-#-------------------------------------------------------------------
-#Group Name                       GRP-Almacenes
-#Member Name                      f5000a.labalm.mercadona.es
-#Time Since Last Sync (HH:MM:SS)  10822:39:55
-#Last Sync Type                   incremental-manual-sync
-#CID Originator                   /Common/f5000a.labalm.mercadona.es
-#CID Time                         2019-Nov-14 10:17:22
-#LSS Originator                   /Common/f5000a.labalm.mercadona.es
-#LSS Time                         2019-Nov-14 10:17:22
-#...
- 
- 
- 
- 
- 
- 
-#            print(pool.raw)
-#            print (member.raw)
-#        else:
-#           print ("No hay nodos con RDP en el balanceador")
-# Create a new pool on the BigIP
-#mypool = mgmt.tm.ltm.pools.pool.create(name='mypool', partition='Common')
- 
-# Load an existing pool and update its description
-#pool_a = mgmt.tm.ltm.pools.pool.load(name='mypool', partition='Common')
-#pool_a.description = "New description"
-#pool_a.update()
- 
-# Delete a pool if it exists
-#if mgmt.tm.ltm.pools.pool.exists(name='mypool', partition='Common'):
-#    pool_b = mgmt.tm.ltm.pools.pool.load(name='mypool', partition='Common')
-#    pool_b.delete()
- 
- 
- 
- 
-f.close()
+ f.close()
